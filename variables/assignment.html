@@ -1,0 +1,33 @@
+<htm>
+    <head>
+        <title>
+            functions
+        </title>
+        <script>
+            var a =parseInt(prompt("Plz input the marks of Physic"));
+            var b=parseInt(prompt("Plz input the marks of Chemistry"));
+            var c=parseInt(prompt("Plz input the marks of Math"));
+            function grade(a,b,c)
+                {
+                    var x= ((a+b+c)/3);
+                    if(x<0 || x>300)
+                    {
+                        document.write("Plz check the input")
+                    }
+                    else if(x<70)
+                    {
+                        document.write("Overall grade is C")
+                    }
+                    else if(x>=70 && x<90)
+                    {
+                        document.write("Overall grade is B")
+                    }
+                    else if (x>=90 && x<100)
+                    {
+                        document.write("Overall grade is A")
+                    }
+                }            
+                    grade(a,b,c);
+        </script>
+    </head>
+</htm>

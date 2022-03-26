@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>if Else</title>
+   
+    <script>
+var  javascriptmarks = parseInt(prompt("please enter the Js Marks" )); // a placeholder or a default parameter
+var  javamarks = parseInt(prompt("please enter the Java Marks"));
+var  dotnetamarks = parseInt(prompt("please enter the .Net Marks"));
+
+var total = javascriptmarks+javamarks+dotnetamarks;
+document.write("Total Marks: "+total+"<br/>");
+
+var average = total/3;
+document.write("Average:"+average+"<br/>")
+
+if(javascriptmarks>=35 && javamarks>=35 && dotnetamarks>=35){
+    document.write("Result:Passed"+"<br/>");
+    if(average>=35 && average<=59){
+        document.write("Grade: C"+"<br/>")
+    }else if(average>=60 && average<=70){
+        document.write("Grade: B"+"<br/>")
+}else{
+    document.write("Grade: A"+"<br/>");
+}
+}else{
+       document.write("Result:Failed");
+}
+    </script>
+</head>
+
+</html>
